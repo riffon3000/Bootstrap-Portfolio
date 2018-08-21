@@ -1,71 +1,75 @@
+<!-- Required HTML5 document type classification for browser compatibility -->
 <!DOCTYPE.html>
+
+<!-- Designation of default language; browser may ask to translate if not default -->
 <html lang="en">
+
   <head>
+    
     <!-- Required meta tags for Bootstrap -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-    <title>About | Riffon</title>
+    <title>Contact | Riffon</title>
   </head>
 
-  <body class="mx-auto my-auto mx-auto px-auto py-auto">
-
-    <div class="container bg-white">
-      <header>   
-        <nav class="navbar">
-          
-          <a class="navbar text-white bg-dark" href="index.html">
-            <h1>Riffon</h1></a>
-          
-          <ul class="nav text-secondary justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="container-fluid navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Navigation Bar Left -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><h1>Riffon</h1></a>
+        </div>
+        <!-- Navigation Bar Right -->
+        <div class="navbar navbar-default navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </header>
-    </div>
+        </div>
+      </div>
+    </nav>
 
-    <div class="container border-top">
-      <section class="container main-section">
-        <h1>Contact</h1>
+    <div class="container">
+      <div class="page-header border-bottom">
+        <h2>Contact</h2>
+      </div>
+      
+      <form class="container">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="name">Name:</label>
+          <div class="col-sm-10">
+            <input type="name" class="form-control" id="name" placeholder="Jane Doe" name="name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="JaneDoe@email.edu" name="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="message">Message:</label>
+          <div class="col-sm-10"> 
+            <input type"message" class="form-control" id="message" placeholder="Enter Message" name="message">
+          </div>
+        </div>
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
 
-        <form class="container">
-          <ul>
-            <li>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-            </li>
-            <li>
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required="required"></textarea>
-            </li>
-          </ul>
-          <input type="submit">
-        </form>
+    <footer class="container border-top text-center text-secondary">
+      Copyright &copy; 
+    </footer>
 
-      </section>
-
-    </div>
-
-    <div class="container bg-dark border-top">
-      <footer class="text-center text-secondary">
-        Copyright &copy; 
-      </footer>
-    </div>
   </body>
 
 </html>
